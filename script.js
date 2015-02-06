@@ -62,8 +62,18 @@ $(document).ready(function () {
         }
         return this;
     };
-    if($$('.ok').addClass('okey').hasClass('okey')){
-        alert('ok');
-    }
+    Select.prototype.toggleClass = function (arg) {
+        var argum = arg.split(' ');
+        for (var i = 0; i < this.length; i++) {
+            for (var j = 0; j < argum.length; j++) {
+                console.log(arguments[i]);
+                this[i].classList.toggle(argum[j]);
+            }
+        }
+        return this;
+    };
+
+    
+
 
 });
