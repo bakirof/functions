@@ -73,7 +73,16 @@ $(document).ready(function () {
         return this;
     };
 
+    Select.prototype.removeClass = function (arg) {
+        var argum = arg.split(' ');
+        for (var i = 0; i < this.length; i++) {
+            for (var j = 0; j < argum.length; j++) {
+                console.log(arguments[i]);
+                this[i].classList.remove(argum[j]);
+            }
+        }
+        return this;
+    };
+
     
-
-
 });
