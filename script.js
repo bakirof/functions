@@ -41,21 +41,29 @@ $(document).ready(function () {
     };
 
     Select.prototype.hasClass = function (arg) {
+        var argum = arg.split(' ');
         for (var i = 0; i < this.length; i++) {
-            if (this[i].classList.contains(arg)) {
-                return true;
+            for (var j = 0; j < argum.length; j++) {
+                if (this[i].classList.contains(argum[j])) {
+                    return true;
+                }
             }
         }
         return false;
     };
 
-    Select.prototype.hasClass = function (arg) {
+    Select.prototype.addClass = function (arg) {
+        var argum = arg.split(' ');
         for (var i = 0; i < this.length; i++) {
-            if (this[i].classList.contains(arg)) {
-                return true;
+            for (var j = 0; j < argum.length; j++) {
+                console.log(arguments[i]);
+                this[i].classList.add(argum[j]);
             }
         }
-        return false;
+        return this;
     };
+    if($$('.ok').addClass('okey').hasClass('okey')){
+        alert('ok');
+    }
 
 });
