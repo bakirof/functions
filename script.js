@@ -88,10 +88,13 @@ $(document).ready(function () {
         var md;
         var parent;
         var tag;
+
         for (var i = 0; i < this.length; i++) {
             parent = this[i].parentNode;
+            tag = parent.innerHTML;
             this[i] = findMd(arg, this[i]);
-            parent.appendChild(this[i]);
+            md = tag + this[i];
+            parent.innerHTML = md;
         }
 
     };
@@ -112,6 +115,8 @@ $(document).ready(function () {
 
     }
 
+    $$('p').wrap('<div></div>');
+
     Select.prototype.append = function (arg) {
         var html;
         var all;
@@ -130,7 +135,7 @@ $(document).ready(function () {
         var all;
         for (var i = 0; i < this.length; i++) {
             html = this[i].innerHTML;
-            all = arg+html;
+            all = arg + html;
             console.log(all);
             this[i].innerHTML = all;
         }
