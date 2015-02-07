@@ -46,25 +46,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1104" max-vertical-offset="2567">
-              <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.48061106" vertical-offset="1104" max-vertical-offset="2567">
+              <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
               <folding>
                 <marker date="1423314619442" expanded="true" signature="3577:3604" placeholder="..." />
                 <marker date="1423314619442" expanded="true" signature="3637:3664" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06085919" vertical-offset="0" max-vertical-offset="838">
-              <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -150,7 +140,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jquery-expect" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../font-dialog" />
+    <property name="editorconfig.notification" value="Applied .editorconfig settings" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -399,12 +390,12 @@
       <created>1423203958452</created>
       <option name="number" value="Default" />
       <updated>1423203958452</updated>
-      <workItem from="1423203962738" duration="34782000" />
+      <workItem from="1423203962738" duration="35280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34782000" />
+    <option name="totallyTimeSpent" value="35280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="1" />
@@ -480,20 +471,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1104" max-vertical-offset="2567">
-          <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.48061106" vertical-offset="1104" max-vertical-offset="2567">
+          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
           <folding>
             <marker date="1423314619442" expanded="true" signature="3577:3604" placeholder="..." />
             <marker date="1423314619442" expanded="true" signature="3637:3664" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06085919" vertical-offset="0" max-vertical-offset="838">
-          <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
-          <folding />
         </state>
       </provider>
     </entry>
