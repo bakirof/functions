@@ -56,7 +56,7 @@ $(document).ready(function () {
         var argum = arg.split(' ');
         for (var i = 0; i < this.length; i++) {
             for (var j = 0; j < argum.length; j++) {
-                console.log(arguments[i]);
+
                 this[i].classList.add(argum[j]);
             }
         }
@@ -66,7 +66,7 @@ $(document).ready(function () {
         var argum = arg.split(' ');
         for (var i = 0; i < this.length; i++) {
             for (var j = 0; j < argum.length; j++) {
-                console.log(arguments[i]);
+
                 this[i].classList.toggle(argum[j]);
             }
         }
@@ -77,12 +77,64 @@ $(document).ready(function () {
         var argum = arg.split(' ');
         for (var i = 0; i < this.length; i++) {
             for (var j = 0; j < argum.length; j++) {
-                console.log(arguments[i]);
+
                 this[i].classList.remove(argum[j]);
             }
         }
         return this;
     };
 
-    
+    Select.prototype.wrap = function (arg) {
+        var md;
+        var parent;
+        var tag;
+        for (var i = 0; i < this.length; i++) {
+            parent = this[i].parentNode;
+            this[i] = findMd(arg, this[i]);
+            parent.appendChild(this[i]);
+        }
+
+    };
+
+    function findMd(arg, arg2) {
+        var first;
+        var second;
+        var third = [];
+        for (var i = 0; i < arg.length; i++) {
+            if (arg[i] == '/') {
+                first = arg.substr(0, i - 1);
+                second = arg.substr(i - 1, arg.length);
+                third = first + arg2 + second;
+                return third;
+
+            }
+        }
+
+    }
+
+    Select.prototype.append = function (arg) {
+        var html;
+        var all;
+        for (var i = 0; i < this.length; i++) {
+            html = this[i].innerHTML;
+            all = html + arg;
+            console.log(all);
+            this[i].innerHTML = all;
+        }
+        return this;
+    };
+
+
+    Select.prototype.prepend = function (arg) {
+        var html;
+        var all;
+        for (var i = 0; i < this.length; i++) {
+            html = this[i].innerHTML;
+            all = arg+html;
+            console.log(all);
+            this[i].innerHTML = all;
+        }
+        return this;
+    };
+    $$('p').prepend('<div style="background-color: lightblue">ok</div>').append('<div style="background-color: lightblue">ok</div>');
 });
